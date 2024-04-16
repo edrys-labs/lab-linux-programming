@@ -1,0 +1,71 @@
+{
+  "id": "6guwuVmxHmLkYi1q",
+  "createdBy": "15sg55y5KVFu",
+  "dateCreated": 1713192447956,
+  "name": "Lab-Linux: Haskell-Programming",
+  "meta": {
+    "logo": "https://raw.githubusercontent.com/edrys-labs/lab-linux/main/media/haskell.jpg",
+    "description": "This course introduces young learners to Haskell, a functional programming language known for its elegance and safety. Students will start by writing a simple \"Hello, World!\" program to understand the basics of Haskell syntax. They will then enhance their program to interact with user inputs and learn how to handle common errors. Finally, students will be introduced to using the Haskell REPL (Read-Eval-Print Loop), a tool that allows them to quickly test Haskell expressions and see results immediately.",
+    "selfAssign": true,
+    "defaultNumberOfRooms": 0
+  },
+  "members": {
+    "teacher": [],
+    "student": []
+  },
+  "modules": [
+    {
+      "url": "https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html",
+      "config": "# Welcome to Lab-Linux: Haskell-Programming\nHaskell is a unique and interesting programming language that's like a math wizard for computers. It uses a special way of programming called \"functional programming,\" which is a bit like telling your computer exactly what you want it to do, instead of how to do it. Imagine you're a chef who tells the kitchen what dish to make, but you don't have to explain every single step of the cooking process—that's a little bit what it's like to use Haskell!\n### Why Haskell is Cool for Young Programmers:\n1. **Think Differently**:\n   Haskell helps you think about problems in a new way.\n   Unlike other languages where you tell the computer every step, in Haskell, you describe what the outcome should be.\n   This helps develop your problem-solving skills and makes you a smarter thinker.\n\n2. **Less Mess**:\n   In Haskell, once you tell the computer something, it remembers it exactly that way forever.\n   This means fewer mistakes and surprises because things don’t change unexpectedly as they can in other languages.\n\n3. **Safe and Sound**:\n   Haskell is known for being safe.\n   It’s designed to catch a lot of common errors that can be tricky to spot in other languages, which means your programs are less likely to crash and are more likely to work right the first time.\n\n4. **Powerful**:\n   Even though it’s great for learning, Haskell is also powerful enough to be used by companies and in science for doing really complicated tasks.\n   Learning Haskell could give you a head start on some pretty advanced topics.\n\n### Introduction to Haskell and Programming\nHaskell was created in the late 1980s by a group of researchers who were interested in developing a more advanced approach to programming. The name \"Haskell\" itself comes from Haskell Curry, a mathematician known for his work in the logic behind programming languages.\nUnlike more common \"imperative\" languages (where you give step-by-step instructions), Haskell is a \"purely functional\" language. This means it treats computations more like mathematical functions. A benefit of this approach is that Haskell programs can be proven correct mathematically, which is really valuable in fields where accuracy is critical, like software that runs spacecraft or financial systems.\nHaskell encourages you to explore and think about programming as a form of expression, not just a tool for making computers do things. By learning Haskell, you’re not just learning to code; you’re learning to refine your analytical thinking, which is a valuable skill in school and beyond.\nBy studying Haskell, you can gain a deep understanding of how programming can be used to solve problems efficiently and creatively, opening doors to future opportunities in technology and engineering.\n\n__Visit a station by clicking onto it and then explore the terminal ;-)__",
+      "studentConfig": "",
+      "teacherConfig": "## Welcome for Teachers\n> This can be used as a base laboratory to create further and more elaborate labs with [edrys-Lite](https://edrys-labs.github.io). > You are currently in the Lobby. > If there is a station available you can switch to it and try out the terminal. > Otherwise, if you are in teacher-mode you can share a lab by clicking onto `setting` >> `station` and then by clicking the presented link, > which is the same as the current link, but only with the word `station` instead of `classroom`.",
+      "stationConfig": "",
+      "showInCustom": "lobby",
+      "width": "full",
+      "height": "huge"
+    },
+    {
+      "url": "https://edrys-labs.github.io/module-editor/index.html",
+      "config": {
+        "editorText": "Starting text in editor...",
+        "runCommand": "execute",
+        "language": "cpp",
+        "theme": "light"
+      },
+      "studentConfig": "",
+      "teacherConfig": "",
+      "stationConfig": "",
+      "showInCustom": "station",
+      "width": "full",
+      "height": "medium"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html",
+      "config": "# Welcome to the Station\n\n#### Tutorial Part 1: Your First Haskell Program\nLet’s get started with your first piece of Haskell code. We'll write a program that prints \"Hello, World!\" to the screen.\n1. **Type or Copy the Following Haskell Code**:\n\n   ```haskell\n   main :: IO ()\n   main = putStrLn \"Hello, World!\"\n   ```\n\n3. **Run the Program**:\n   Click the run button in your online editor.\n   You should see \"Hello, World!\" appear on the screen\n   You’ve just created your first Haskell program!\n\n#### Tutorial Part 2: Enhancing Your Program\nNext, let’s modify the program so it asks for your name and greets you personally.\n1. **Modify Your Program**:\n\n   ```haskell\n   main :: IO ()\n   main = do\n       putStrLn \"Enter your name: \"\n       name <- getLine\n       putStrLn (\"Hello, \" ++ name ++ \"!\")\n   ```\n\n2. **Run the Program**:\n   When you execute this program, it will prompt you to enter your name.\n   Type your name into the input box and press enter.\n   You should see a personalized greeting message.\n\n#### Tutorial Part 3: Introduce an Error\nLearning how to handle errors is an essential skill. Let's introduce a syntax error and see how Haskell reacts.\n1. **Introduce an Error**:\n   Change the greeting line to intentionally misspell `putStrLn`:\n\n   ```haskell\n   main = do\n       putStrLn \"Enter your name: \"\n       name <- getLine\n       putStrln (\"Hello, \" ++ name ++ \"!\")\n   ```\n\n2. **Run the Program and Observe the Error**:\n   This will result in a compilation error, which the editor will display, usually highlighting the problematic part.\n   The error will mention something like \"`Not in scope: putStrln`\".\n\n3. **Fix the Error**:\n   Correct the misspelling from `putStrln` back to `putStrLn` and run your program again.\n\n#### Tutorial Part 4: Introduction to the REPL\nFinally, let's explore the Haskell REPL, which allows you to test Haskell code in real-time.\n1. **Access the REPL**:\n  Go to the terminal and write `ghci` to open the Haskell REPL directly in the interface.\n\n2. **Use the REPL**:\n   Type `putStrLn \"Hello, REPL!\"` into the REPL and press enter.\n   You’ll see it execute right away, printing \"Hello, REPL!\".\n\n3. **Experiment**:\n   Try other Haskell functions in the REPL, like `print (1 + 2)` or `print (reverse \"hello\")`, to see immediate results.\n ",
+      "studentConfig": "",
+      "teacherConfig": "",
+      "stationConfig": "## Instructions for Station-Sharing \n\nYou are currently responsible for sharing a station of this lab.\nYou have multiple options to share a or your terminal.\nTherefor we use the pyxtermjs - terminal server from:\n\nhttps://github.com/edrys-labs/module-pyxtermjs\n\n### Using Docker\n\nIf you haven't done it so far, install [docker](https://docs.docker.com/engine/install/).\nOr, follow one of the instruction-videos for your system:\n\n<details>\n<summary>Install Docker on Linux</summary>  \n<iframe\n  style=\"width: 100%; aspect-ratio: 16 / 9\"\n  src=\"https://www.youtube.com/embed/cqbh-RneBlk?si=juvUM5d2OSZ28WBv\"\n  title=\"YouTube video player\"\n  frameborder=\"0\"\n  allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"\n  referrerpolicy=\"strict-origin-when-cross-origin\"\n  allowfullscreen></iframe>\n</details>\n\n<details>\n<summary>Install Docker on Windows</summary>\n<iframe\n  style=\"width: 100%; aspect-ratio: 16 / 9\"\n  src=\"https://www.youtube.com/embed/WDEdRmTCSs8?si=X0agStn1akNcZLGu\"\n  title=\"YouTube video player\"\n  frameborder=\"0\"\n  allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"\n  referrerpolicy=\"strict-origin-when-cross-origin\"\n  allowfullscreen></iframe>\n</details>\n\n<details>\n<summary>Install Docker on MacOS</summary>\n<iframe\n  style=\"width: 100%; aspect-ratio: 16 / 9\"\n  src=\"https://www.youtube.com/embed/-EXlfSsP49A?si=OZ_l4_2hDKb6ULQ_\"\n  title=\"YouTube video player\"\n  frameborder=\"0\"\n  allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"\n  referrerpolicy=\"strict-origin-when-cross-origin\"\n  allowfullscreen></iframe>\n</details>\n\nThen the only thing that is required is to run the following command:\n\n```bash\ndocker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest\n```\n\nThis will download the pyxtermjs terminal-server from docker-hub and run it in a secure environment.\nIt contains support for:\n\n- `clojure`\n- `g++`\n- `gcc`\n- `golang`\n- `haskell`\n- `java`\n- `lua`\n- `mono`\n- `nodejs`\n- `python 3`\n- `r`\n- `rustc`\n\n### Using Python\n\nYou can also share your terminal directly via Python, visit the following project\n\nhttps://github.com/edrys-labs/module-pyxtermjs\n\n... the easiest way is to perform the following steps:\n\n``` bash\n# 1. clone the repository or download the folder manually\ngit clone https://github.com/edrys-labs/module-pyxtermjs\n\n# 2. install all required sources\npip3 install -r requirements.txt\n\n# 3. run the terminal-server\npython3 -m pyxtermjs --cors True --command bash --port 5000\n```",
+      "showInCustom": "station",
+      "width": "half",
+      "height": "huge"
+    },
+    {
+      "url": "https://edrys-labs.github.io/module-pyxtermjs/index.html",
+      "config": "",
+      "studentConfig": "",
+      "teacherConfig": "",
+      "stationConfig": {
+        "server": "http://localhost:5000/pty",
+        "execute": "execute",
+        "script": "echo $CODE | base64 --decode > hello.hs\nghc hello.hs && ./hello",
+        "enable": {
+          "teacher": true,
+          "student": true
+        }
+      },
+      "showInCustom": "station",
+      "width": "full",
+      "height": "medium"
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+id: loyA61WU1pQrcxuH
+createdBy: 15sg55Z9lOgM
+dateCreated: 1713192447954
+name: 'Lab-Linux: Java-Programming'
+meta:
+  logo: https://raw.githubusercontent.com/edrys-labs/lab-linux/main/media/java.jpg
+  description: >-
+    In this Java programming course, students will embark on an exciting journey
+    into the world of coding. They'll start by learning the basics of Java, a
+    versatile and widely used programming language. By creating simple programs
+    like "Hello, World!" and gradually introducing more complex elements such as
+    input from users, students will develop essential programming skills.
+    Additionally, they will learn to identify and fix common errors, enhancing
+    their problem-solving abilities.
+  selfAssign: true
+  defaultNumberOfRooms: 0
+members:
+  teacher: []
+  student: []
+modules:
+  - url: >-
+      https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
+    config: >-
+      # Welcome to Lab-Linux: Java-Programming
+
+
+      Java is a popular programming language that acts like a universal
+      translator for computers, helping them understand what we want them to do.
+
+      It’s kind of like the language you use to build awesome structures in a
+      virtual world, except these structures are programs and apps that work in
+      the real world!
+
+
+      Here’s why Java is awesome for young programmers:
+
+
+      1. **Write once, run anywhere**:
+         Java is super special because you can write your program once, and it can run on almost any device, whether it's a computer, a smartphone, or even a smart fridge!
+
+      2. **Easy to learn basics**:
+         Java has a straightforward way of doing things, which makes it easy to start learning.
+         It’s like playing with building blocks; once you know how a few basic blocks fit together, you can start building more complicated stuff.
+
+      3. **Helps you think like a programmer**:
+         Learning Java teaches you to think logically and solve problems, just like puzzles. It trains your brain to organize thoughts and tackle problems in smart, efficient ways.
+
+      4. **Used everywhere**:
+         Java is used by big companies all around the world to create games, social media apps, and all sorts of useful software.
+         So, learning Java might help you create your own game or app one day!
+
+      Java is not just about coding; it’s a way to express your ideas and see
+      them come to life in the digital world. It’s a powerful tool that can open
+      up endless opportunities for creating and innovating!
+
+
+      __Visit a station by clicking onto it and then explore the terminal ;-)__
+    studentConfig: ''
+    teacherConfig: >-
+      ## Welcome for Teachers
+
+      > This can be used as a base laboratory to create further and more
+      elaborate labs with [edrys-Lite](https://edrys-labs.github.io).
+
+      > You are currently in the Lobby. If there is a station available you can
+      switch to it and try out the terminal.
+
+      > Otherwise, if you are in teacher-mode you can share a lab by clicking
+      onto `setting` >> `station` and then by clicking the presented link,
+
+      > which is the same as the current link, but only with the word `station`
+      instead of `classroom`.
+    stationConfig: ''
+    showInCustom: lobby
+    width: full
+    height: huge
+  - url: https://edrys-labs.github.io/module-editor/index.html
+    config:
+      editorText: Starting text in editor...
+      runCommand: execute
+      language: cpp
+      theme: light
+    studentConfig: ''
+    teacherConfig: ''
+    stationConfig: ''
+    showInCustom: station
+    width: full
+    height: medium
+  - url: >-
+      https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
+    config: >-
+      # Welcome to the Station
+
+
+      ## Tutorial Part 1: Your First Java Program
+
+      Let's start with something simple. We're going to write a program that
+      tells the computer to say "Hello, World!". This is a traditional first
+      step in learning any programming language.
+
+      1. **Type or copy the following Java code into the editor**:
+
+         ```java
+         public class HelloWorld {
+             public static void main(String[] args) {
+                 System.out.println("Hello, World!");
+             }
+         }
+         ```
+
+      2. **Run the program**:
+         Press the run button in your online editor.
+         You should see the output `Hello, World!` appear on the screen.
+         Congratulations, you've just written and run your first Java program!
+
+      ## Tutorial Part 2: Enhancing Your Program
+
+      Now, let's make your program a bit more interactive. We'll modify it so it
+      asks for your name and then says hello to you personally.
+
+      1. **Modify your program**:
+         Change the code in your online editor to the following:
+
+         ```java
+         import java.util.Scanner; // This line imports the Scanner class for reading input
+
+         public class HelloWorld {
+             public static void main(String[] args) {
+                 Scanner scanner = new Scanner(System.in);  // Create a Scanner object to read input
+                 System.out.println("Enter your name: ");  // Ask for user's name
+                 String name = scanner.nextLine();  // Read user input
+
+                 System.out.println("Hello, " + name + "!");  // Say hello to the user
+             }
+         }
+         ```
+
+      2. **Run the program**:
+         When you run this program, it will ask you to enter your name.
+         Type your name into the input box and press enter.
+         You should see a message saying hello to you!
+
+      #### Tutorial Part 3: Introduce an Error
+
+      Let's introduce a common error so you can learn how to identify and fix
+      it.
+
+      1. **Introduce an error**:
+         Change the line that creates the Scanner object slightly:
+
+         ```java
+         Scanner scanner = new Scanner(System.in);
+         ```
+
+         Change it to:
+
+         ```java
+         Scanner scanner = new Scnner(System.in);  // Misspelled 'Scanner'
+         ```
+
+      2. **Run the program and observe the error**:
+         When you try to run your program, you'll get an error message like `error: cannot find symbol`.
+         This error occurs because `Scnner` is not recognized by Java (because we misspelled it).
+
+      3. **Fix the error**:
+         Correct the spelling of `Scanner` in the instantiation of the `scanner` object.
+         Run the program again to see it working perfectly.
+
+      Through these steps, students not only learn how to write and run Java
+      programs but also how to troubleshoot and resolve simple errors, which are
+      important skills in programming.
+       
+    studentConfig: ''
+    teacherConfig: ''
+    stationConfig: >-
+      ## Instructions for Station-Sharing 
+
+
+      You are currently responsible for sharing a station of this lab.
+
+      You have multiple options to share a or your terminal.
+
+      Therefor we use the pyxtermjs - terminal server from:
+
+
+      https://github.com/edrys-labs/module-pyxtermjs
+
+
+      ### Using Docker
+
+
+      If you haven't done it so far, install
+      [docker](https://docs.docker.com/engine/install/).
+
+      Or, follow one of the instruction-videos for your system:
+
+
+      <details>
+
+      <summary>Install Docker on Linux</summary>  
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/cqbh-RneBlk?si=juvUM5d2OSZ28WBv"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      <details>
+
+      <summary>Install Docker on Windows</summary>
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/WDEdRmTCSs8?si=X0agStn1akNcZLGu"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      <details>
+
+      <summary>Install Docker on MacOS</summary>
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/-EXlfSsP49A?si=OZ_l4_2hDKb6ULQ_"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      Then the only thing that is required is to run the following command:
+
+
+      ```bash
+
+      docker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest
+
+      ```
+
+
+      This will download the pyxtermjs terminal-server from docker-hub and run
+      it in a secure environment.
+
+      It contains support for:
+
+
+      - `clojure`
+
+      - `g++`
+
+      - `gcc`
+
+      - `golang`
+
+      - `haskell`
+
+      - `java`
+
+      - `lua`
+
+      - `mono`
+
+      - `nodejs`
+
+      - `python 3`
+
+      - `r`
+
+      - `rustc`
+
+
+      ### Using Python
+
+
+      You can also share your terminal directly via Python, visit the following
+      project
+
+
+      https://github.com/edrys-labs/module-pyxtermjs
+
+
+      ... the easiest way is to perform the following steps:
+
+
+      ``` bash
+
+      # 1. clone the repository or download the folder manually
+
+      git clone https://github.com/edrys-labs/module-pyxtermjs
+
+
+      # 2. install all required sources
+
+      pip3 install -r requirements.txt
+
+
+      # 3. run the terminal-server
+
+      python3 -m pyxtermjs --cors True --command bash --port 5000
+
+      ```
+    showInCustom: station
+    width: half
+    height: huge
+  - url: https://edrys-labs.github.io/module-pyxtermjs/index.html
+    config: ''
+    studentConfig: ''
+    teacherConfig: ''
+    stationConfig:
+      server: http://localhost:5000/pty
+      execute: execute
+      script: |-
+        echo $CODE | base64 --decode > HelloWorld.java
+        javac HelloWorld.java && java HelloWorld
+      enable:
+        teacher: true
+        student: true
+    showInCustom: station
+    width: full
+    height: medium

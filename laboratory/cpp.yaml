@@ -1,0 +1,309 @@
+id: loyA61WU1LQrcxuH
+createdBy: 15sg55Z9lOgM
+dateCreated: 1713192447956
+name: 'Lab-Linux: C++ Programming'
+meta:
+  logo: https://raw.githubusercontent.com/edrys-labs/lab-linux/main/media/cpp.jpg
+  description: >-
+    This C++ programming course introduces young students to the basics of one of the most widely used programming languages in the world.
+    Starting with a simple "Hello, World!" program, students will learn the foundational concepts of C++ and how to interact with the computer through code.
+    As they progress, they'll enhance their program to accept user input, and they'll also learn how to identify and correct common errors, which are important skills in coding.
+    This course is designed to make C++ approachable and engaging for young learners, fostering both critical thinking and creative problem-solving skills.
+  selfAssign: true
+  defaultNumberOfRooms: 0
+members:
+  teacher: []
+  student: []
+modules:
+  - url: >-
+      https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
+    config: >-
+      # Welcome to Lab-Linux: C++ -Programming
+
+      C++ is a super cool programming language that's like a toolset for building all sorts of computer programs, from games to apps that help airplanes fly! It's known for being fast and powerful, which makes it perfect for creating software that needs to run quickly and efficiently.
+
+      ## Why C++ is Exciting for Young Programmers:
+
+      1. **Make Anything**:
+         C++ can be used to make almost anything in the digital world.
+         It's used to develop video games, desktop apps, operating systems, and even helps in programming robots!
+
+      2. **Fast and Powerful**:
+         C++ is known for its speed, which is why it's used by programmers who work on cutting-edge tech projects.
+         If you like the idea of making software that works super fast, C++ might be the right language to learn.
+
+      3. **Popular and Useful**:
+         Lots of your favorite computer games and programs are made with C++.
+         By learning C++, you're learning a language that professionals use to create some of the coolest technology out there!
+
+      4. **Challenging but Rewarding**:
+         C++ might be a bit more challenging to learn than some other programming languages, but it's really rewarding.
+         You get to understand more about how computers work, and it gives you a strong foundation for learning other coding languages too.
+
+      ## Introduction to C++ and Programming
+
+      C++ was created by Bjarne Stroustrup in the early 1980s as part of his PhD project.
+      It was originally called "C with Classes" because it allowed programmers to use something called 'classes' in addition to everything that was already in C.
+      These classes help programmers organize code better and make more complex programs easier to manage.
+
+      C++ is a versatile language that supports both procedural and object-oriented programming, making it highly adaptable for different types of software projects.
+      It lets you control very precisely how your program uses the computer’s memory; this control can help your programs run faster and use less space.
+
+      Because of these features, C++ is used by competitive programmers who participate in coding competitions, as well as in practical, professional settings like software development, game design, and even in systems that operate spacecraft.
+
+      Learning C++ teaches you discipline and attention to detail, which are great skills not just for programming, but for life.
+      By starting to learn C++ as a young student, you're setting yourself up for a great future in any field where problem-solving and precision are important.
+
+      __Visit a station by clicking onto it and then explore the terminal ;-)__
+    studentConfig: ''
+    teacherConfig: >-
+      ## Welcome for Teachers
+
+      > This can be used as a base laboratory to create further and more elaborate labs with [edrys-Lite](https://edrys-labs.github.io).
+      > You are currently in the Lobby.
+      > If there is a station available you can switch to it and try out the terminal.
+      > Otherwise, if you are in teacher-mode you can share a lab by clicking onto `setting` >> `station` and then by clicking the presented link,
+      > which is the same as the current link, but only with the word `station` instead of `classroom`.
+    stationConfig: ''
+    showInCustom: lobby
+    width: full
+    height: huge
+  - url: https://edrys-labs.github.io/module-editor/index.html
+    config:
+      editorText: Starting text in editor...
+      runCommand: execute
+      language: cpp
+      theme: light
+    studentConfig: ''
+    teacherConfig: ''
+    stationConfig: ''
+    showInCustom: station
+    width: full
+    height: medium
+  - url: >-
+      https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
+    config: >-
+      # Welcome to the Station
+
+      ## Tutorial Part 1: Your First C++ Program
+
+      Let’s begin by writing a basic program that outputs "Hello, World!" to the screen.
+
+      2. **Type or Copy the Following C++ Code into the Editor**:
+
+         ```cpp
+         #include <iostream>
+
+         int main() {
+             std::cout << "Hello, World!" << std::endl;
+             return 0;
+         }
+         ```
+
+      3. **Run the Program**:
+         Press the run button in your online editor.
+         You should see the output `Hello, World!` displayed on the screen.
+         Congratulations, you’ve just created and run your first C++ program!
+
+      #### Tutorial Part 2: Enhance Your Program
+
+      Now, let's modify your program to interact with the user by asking for their name and then greeting them personally.
+
+      1. **Modify Your Program**:
+
+         ```cpp
+         #include <iostream>
+         #include <string>
+
+         int main() {
+             std::string name;
+             std::cout << "Enter your name: ";
+             std::getline(std::cin, name);
+             std::cout << "Hello, " << name << "!" << std::endl;
+             return 0;
+         }
+         ```
+
+      2. **Run the Program**:
+         When you execute this program, it will ask for your name.
+         Type your name into the input box and press enter.
+         You should see a message that greets you by name.
+
+      #### Tutorial Part 3: Introduce an Error
+
+      To help understand error handling, let’s introduce a mistake in the code.
+
+      1. **Introduce an Error**: Modify the `#include` directive incorrectly:
+        
+         ```cpp
+         #include <iostream>
+         // Error introduced here: "sting" should be "string"
+         #include <sting>
+         ```
+
+      2. **Run the Program and Observe the Error**:
+         The compiler will display an error message stating something like "fatal error: sting: No such file or directory", indicating it can't find a file called "sting".
+
+      3. **Fix the Error**:
+         Correct the spelling from `sting` to `string` and run your program again.
+   
+    studentConfig: ''
+    teacherConfig: ''
+    stationConfig: >-
+      ## Instructions for Station-Sharing 
+
+
+      You are currently responsible for sharing a station of this lab.
+
+      You have multiple options to share a or your terminal.
+
+      Therefor we use the pyxtermjs - terminal server from:
+
+
+      https://github.com/edrys-labs/module-pyxtermjs
+
+
+      ### Using Docker
+
+
+      If you haven't done it so far, install
+      [docker](https://docs.docker.com/engine/install/).
+
+      Or, follow one of the instruction-videos for your system:
+
+
+      <details>
+
+      <summary>Install Docker on Linux</summary>  
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/cqbh-RneBlk?si=juvUM5d2OSZ28WBv"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      <details>
+
+      <summary>Install Docker on Windows</summary>
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/WDEdRmTCSs8?si=X0agStn1akNcZLGu"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      <details>
+
+      <summary>Install Docker on MacOS</summary>
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/-EXlfSsP49A?si=OZ_l4_2hDKb6ULQ_"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      Then the only thing that is required is to run the following command:
+
+
+      ```bash
+
+      docker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest
+
+      ```
+
+
+      This will download the pyxtermjs terminal-server from docker-hub and run
+      it in a secure environment.
+
+      It contains support for:
+
+
+      - `clojure`
+
+      - `g++`
+
+      - `gcc`
+
+      - `golang`
+
+      - `haskell`
+
+      - `java`
+
+      - `lua`
+
+      - `mono`
+
+      - `nodejs`
+
+      - `python 3`
+
+      - `r`
+
+      - `rustc`
+
+
+      ### Using Python
+
+
+      You can also share your terminal directly via Python, visit the following
+      project
+
+
+      https://github.com/edrys-labs/module-pyxtermjs
+
+
+      ... the easiest way is to perform the following steps:
+
+
+      ``` bash
+
+      # 1. clone the repository or download the folder manually
+
+      git clone https://github.com/edrys-labs/module-pyxtermjs
+
+
+      # 2. install all required sources
+
+      pip3 install -r requirements.txt
+
+
+      # 3. run the terminal-server
+
+      python3 -m pyxtermjs --cors True --command bash --port 5000
+
+      ```
+    showInCustom: station
+    width: half
+    height: huge
+  - url: https://edrys-labs.github.io/module-pyxtermjs/index.html
+    config: ''
+    studentConfig: ''
+    teacherConfig: ''
+    stationConfig:
+      server: http://localhost:5000/pty
+      execute: execute
+      script: |-
+        echo $CODE | base64 --decode > main.cpp
+        g++ main.cpp && ./a.out
+      enable:
+        teacher: true
+        student: true
+    showInCustom: station
+    width: full
+    height: medium

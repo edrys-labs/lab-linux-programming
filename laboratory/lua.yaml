@@ -1,0 +1,315 @@
+id: loyA61WU1pQrcxuH
+createdBy: 15sg55Z9lOgM
+dateCreated: 1713192447954
+name: 'Lab-Linux: Lua-Programming'
+meta:
+  logo: https://raw.githubusercontent.com/edrys-labs/lab-linux/main/media/lua.jpg
+  description: >-
+    In this engaging Lua programming course, young students will dive into the basics of coding using one of the simplest and most versatile programming languages.
+    They will start by writing a simple "Hello, World!" program to learn how to send commands to the computer.
+    As they progress, they will enhance their program to interact with users by accepting inputs.
+    Students will also encounter and learn how to resolve a common programming error, which will help develop their problem-solving skills in coding.
+  selfAssign: true
+  defaultNumberOfRooms: 0
+members:
+  teacher: []
+  student: []
+modules:
+  - url: >-
+      https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
+    config: >-
+      # Welcome to Lab-Linux: Lua-Programming
+
+      Lua is a fun and simple programming language that's like a magical notebook.
+      Whatever instructions you write down in it, your computer can understand and follow.
+      It's like telling a story to your computer, and then the computer acts out that story!
+
+      ### Why Lua is Great for Young Programmers:
+
+      1. **Easy to Learn**:
+         Lua is known for its simplicity.
+         Its rules (syntax) are straightforward, making it easier for beginners like you to start writing your own computer programs without getting too bogged down by complicated code.
+
+      2. **Lightweight**:
+         Lua is very light, which means it doesn't need a lot of computer power to work.
+         This makes it perfect for running on all sorts of devices, from large computers to tiny gadgets like game consoles and watches.
+
+      3. **Versatile**:
+         Even though it's simple, Lua is very powerful.
+         Game developers use Lua to make games more interactive.
+         It's also used in web applications, image processing, and even robots!
+
+      4. **Embedded Use**:
+         Lua is often used inside other applications to make them more flexible.
+         For instance, if a video game is built in another programming language, Lua can be used to handle things like game logic and character behavior without needing major changes to the game itself.
+
+      ### Introduction to Lua
+
+      Lua was created in Brazil in 1993 by a team of developers who needed a powerful yet simple language for a project they were working on.
+      The name "Lua" is a word from Portuguese, meaning "Moon", symbolizing its role as a lighter counterpart to the main programming tasks.
+
+      Lua is different from many other programming languages because it is an "embedded" language.
+      This means that instead of standing alone, it gets embedded into other software programs to help manage things like graphics, user interactions, and other elements that users see and interact with directly.
+
+      By learning Lua, you won’t just learn how to write code; you’ll learn how to make your computer do things you want, like making up a game or controlling a robot.
+      This makes programming with Lua a fun and exciting challenge that can help you bring your creative ideas to life!
+
+
+      __Visit a station by clicking onto it and then explore the terminal ;-)__
+    studentConfig: ''
+    teacherConfig: >-
+      ## Welcome for Teachers
+
+      > This can be used as a base laboratory to create further and more
+      elaborate labs with [edrys-Lite](https://edrys-labs.github.io).
+
+      > You are currently in the Lobby. If there is a station available you can
+      switch to it and try out the terminal.
+
+      > Otherwise, if you are in teacher-mode you can share a lab by clicking
+      onto `setting` >> `station` and then by clicking the presented link,
+
+      > which is the same as the current link, but only with the word `station`
+      instead of `classroom`.
+    stationConfig: ''
+    showInCustom: lobby
+    width: full
+    height: huge
+  - url: https://edrys-labs.github.io/module-editor/index.html
+    config:
+      editorText: Starting text in editor...
+      runCommand: execute
+      language: cpp
+      theme: light
+    studentConfig: ''
+    teacherConfig: ''
+    stationConfig: ''
+    showInCustom: station
+    width: full
+    height: medium
+  - url: >-
+      https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
+    config: >-
+      # Welcome to the Station
+     
+      #### Tutorial Part 1: Your First Lua Program
+
+      Let's kick things off with a very simple program.
+      You'll write a few lines of Lua code that will make the computer display "Hello, World!".
+
+      1. **Type or copy the following Lua code into the editor**:
+
+         ```lua
+         print("Hello, World!")
+         ```
+
+      2. **Run the program**:
+         Hit the run button in your online editor.
+         You should see "Hello, World!" printed out on the screen.
+         Congratulations on running your first piece of Lua code!
+
+      #### Tutorial Part 2: Enhance Your Program
+
+      Now, let's make your program interactive by asking for the user's name and then greeting them personally.
+
+      1. **Modify your program**:
+         Adjust your existing code to include user input and personalize the greeting.
+         Type the following into your online editor:
+
+         ```lua
+         io.write("Enter your name: ")
+         name = io.read()
+         print("Hello, " .. name .. "!")
+         ```
+
+      2. **Run the program**:
+         When you execute this program, it will prompt you to enter your name.
+         Type your name into the input box and press enter to see a personalized greeting message.
+
+      #### Tutorial Part 3: Introduce an Error
+
+      It's important to learn how to identify and fix errors in programming.
+      Let's introduce a small mistake and see if you can find and correct it.
+
+      1. **Introduce an error**:
+         Modify the `print` function incorrectly:
+
+         ```lua
+         io.write("Enter your name: ")
+         name = io.read()
+         prnt("Hello, " .. name .. "!")
+         ```
+
+      2. **Run the program and observe the error**:
+         This time, the program won't run as expected.
+         Instead, you'll see an error message that says something like `attempt to call global 'prnt' (a nil value)`.
+
+      3. **Fix the error**:
+         The error occurred because `prnt` is not recognized by Lua.
+         The correct function is `print`.
+         Fix the spelling and run your program again to ensure it works correctly.
+
+      Through these steps, students will not only learn the basic syntax of Lua but also gain experience in debugging, a valuable skill in all areas of programming.
+      This tutorial is designed to make learning programming accessible and fun, encouraging young learners to explore and experiment with code.
+      
+       
+    studentConfig: ''
+    teacherConfig: ''
+    stationConfig: >-
+      ## Instructions for Station-Sharing 
+
+
+      You are currently responsible for sharing a station of this lab.
+
+      You have multiple options to share a or your terminal.
+
+      Therefor we use the pyxtermjs - terminal server from:
+
+
+      https://github.com/edrys-labs/module-pyxtermjs
+
+
+      ### Using Docker
+
+
+      If you haven't done it so far, install
+      [docker](https://docs.docker.com/engine/install/).
+
+      Or, follow one of the instruction-videos for your system:
+
+
+      <details>
+
+      <summary>Install Docker on Linux</summary>  
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/cqbh-RneBlk?si=juvUM5d2OSZ28WBv"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      <details>
+
+      <summary>Install Docker on Windows</summary>
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/WDEdRmTCSs8?si=X0agStn1akNcZLGu"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      <details>
+
+      <summary>Install Docker on MacOS</summary>
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/-EXlfSsP49A?si=OZ_l4_2hDKb6ULQ_"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      Then the only thing that is required is to run the following command:
+
+
+      ```bash
+
+      docker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest
+
+      ```
+
+
+      This will download the pyxtermjs terminal-server from docker-hub and run
+      it in a secure environment.
+
+      It contains support for:
+
+
+      - `clojure`
+
+      - `g++`
+
+      - `gcc`
+
+      - `golang`
+
+      - `haskell`
+
+      - `java`
+
+      - `lua`
+
+      - `mono`
+
+      - `nodejs`
+
+      - `python 3`
+
+      - `r`
+
+      - `rustc`
+
+
+      ### Using Python
+
+
+      You can also share your terminal directly via Python, visit the following
+      project
+
+
+      https://github.com/edrys-labs/module-pyxtermjs
+
+
+      ... the easiest way is to perform the following steps:
+
+
+      ``` bash
+
+      # 1. clone the repository or download the folder manually
+
+      git clone https://github.com/edrys-labs/module-pyxtermjs
+
+
+      # 2. install all required sources
+
+      pip3 install -r requirements.txt
+
+
+      # 3. run the terminal-server
+
+      python3 -m pyxtermjs --cors True --command bash --port 5000
+
+      ```
+    showInCustom: station
+    width: half
+    height: huge
+  - url: https://edrys-labs.github.io/module-pyxtermjs/index.html
+    config: ''
+    studentConfig: ''
+    teacherConfig: ''
+    stationConfig:
+      server: http://localhost:5000/pty
+      execute: execute
+      script: |-
+        echo $CODE | base64 --decode > hello.lua
+        lua hello.lua
+      enable:
+        teacher: true
+        student: true
+    showInCustom: station
+    width: full
+    height: medium

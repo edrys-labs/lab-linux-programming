@@ -1,0 +1,71 @@
+{
+  "id": "03Kcv63bx4iGhsPl",
+  "createdBy": "15sg55y5KVFu",
+  "dateCreated": 1713192447956,
+  "name": "Lab-Linux: Python-Programming",
+  "meta": {
+    "logo": "https://raw.githubusercontent.com/edrys-labs/lab-linux/main/media/python.jpg",
+    "description": "This Python programming course is designed to introduce young learners to the exciting world of coding. Students will start by writing a simple program that prints a message to the screen. They'll then enhance their program to interact with users by taking input and responding to it. Along the way, they'll learn how to identify and fix a common coding error, and finally, they'll explore the Python REPL (Read-Eval-Print Loop), a tool that allows them to experiment with Python code in real-time.",
+    "selfAssign": true,
+    "defaultNumberOfRooms": 0
+  },
+  "members": {
+    "teacher": [],
+    "student": []
+  },
+  "modules": [
+    {
+      "url": "https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html",
+      "config": "# Welcome to Lab-Linux: Python-Programming\nPython is like a magic wand for computers—it lets you tell them exactly what to do in a way that's easy to understand and fun to learn! Python is one of the most popular programming languages in the world because it's really simple for beginners but also powerful enough for the pros. Imagine you could write your own instructions for a magic spell that makes the computer do cool tricks like drawing pictures or solving math problems—that's kind of what programming with Python is like!\n### Why Python is Awesome for Young Programmers:\n1. **Easy to Read and Write**:\n   Python looks a lot like the English language, with a focus on readability.\n   This makes it easier for you to learn how to program and remember what your code is supposed to do.\n\n2. **Versatile**:\n   Python can be used for so many different things—from creating web applications and games to handling big data and performing scientific computations.\n   Whatever you're interested in, Python can help you build it.\n\n3. **Great Starting Point**:\n   Many schools and universities teach Python as a first programming language because it's a great way to introduce students to how coding works.\n   Plus, there's a huge community of Python programmers who create helpful tools and tutorials, so it’s easy to find answers and get help when you need it.\n\n4. **Fun**:\n   With Python, you can start creating your own projects quickly.\n   It's fun to see results without having to write a lot of code, and that makes learning really enjoyable.\n\n### Introduction to Python and Programming\nPython was created by Guido van Rossum and released in 1991. The goal was to make a language that was both easy to read and write. That's why Python is often praised for its simplicity and elegance. In programming, you write down instructions for the computer to follow. These instructions are called \"code,\" and when the computer follows your code, it can do nearly anything you can think of.\nProgramming is a lot like crafting—you start with an idea, use tools (like Python) to shape that idea, and create something completely new. By learning Python, you're not just learning a language; you're learning how to think like a programmer, which means breaking down problems into smaller pieces and solving them logically.\nIn this tutorial, you’ll explore the basics of Python programming, and by the end, you'll have the skills to create your own simple programs. Python is your first step into a world where you can bring your creative ideas to life in the form of fun games, helpful applications, and so much more! Ready to start this adventure? Let's dive in!\n\n__Visit a station by clicking onto it and then explore the terminal ;-)__",
+      "studentConfig": "",
+      "teacherConfig": "## Welcome for Teachers\n> This can be used as a base laboratory to create further and more elaborate labs with [edrys-Lite](https://edrys-labs.github.io). > You are currently in the Lobby. > If there is a station available you can switch to it and try out the terminal. > Otherwise, if you are in teacher-mode you can share a lab by clicking onto `setting` >> `station` and then by clicking the presented link, > which is the same as the current link, but only with the word `station` instead of `classroom`.",
+      "stationConfig": "",
+      "showInCustom": "lobby",
+      "width": "full",
+      "height": "huge"
+    },
+    {
+      "url": "https://edrys-labs.github.io/module-editor/index.html",
+      "config": {
+        "editorText": "Starting text in editor...",
+        "runCommand": "execute",
+        "language": "cpp",
+        "theme": "light"
+      },
+      "studentConfig": "",
+      "teacherConfig": "",
+      "stationConfig": "",
+      "showInCustom": "station",
+      "width": "full",
+      "height": "medium"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html",
+      "config": "# Welcome to the Station      \n#### Tutorial Part 1: Your First Python Program\nLet’s kick off with a very basic Python program that says hello to the world.\n1. **Type or Copy the Following Python Code into the Editor**:\n\n   ```python\n   print(\"Hello, World!\")\n   ```\n\n3. **Run the Program**:\n   Hit the run button in your online editor.\n   You should see the output `Hello, World!` displayed on the screen.\n   Congratulations, you’ve just written and executed your first Python program!\n\n#### Tutorial Part 2: Enhance Your Program\nNow, let’s make your program interactive by asking for the user's name and greeting them personally.\n1. **Modify Your Program**:\n\n   ```python\n   name = input(\"Enter your name: \")\n   print(\"Hello, \" + name + \"!\")\n   ```\n\n2. **Run the Program**: When you execute this updated program, it will prompt you to enter your name. Type your name into the input box and press enter. You should then see a message that greets you by name.\n#### Tutorial Part 3: Introduce an Error\nTo help you learn how to solve problems, let’s introduce a mistake in the code.\n1. **Introduce an Error**: Modify the greeting line to use an undefined variable:\n\n   ```python\n   name = input(\"Enter your name: \")\n   print(\"Hello, \" + person + \"!\")\n   ```\n\n2. **Run the Program and Observe the Error**:\n   The interpreter will display an error message like \"`NameError: name 'person' is not defined`\".\n   This error occurs because `person` was not defined before it was used.\n\n3. **Fix the Error**:\n   Change `person` back to `name` to correct the error and run your program again.\n\n#### Tutorial Part 4: Introduction to the REPL\nFinally, let’s explore the Python REPL, which lets you interact with Python directly to test small pieces of code quickly.\n1. **Access the REPL**: Type in the command prompt `python` or `python3` and press Enter.\n2. **Use the REPL**:\n   In the REPL, you can type Python code directly and see the results immediately.\n   Try it out:\n   \n   ```python\n   >>> print(\"Hello from the REPL!\")\n   Hello from the REPL!\n   ```\n\n3. **Experiment**: You can use the REPL to experiment with Python commands, test expressions, or troubleshoot small code snippets.\n4. **Exit the REPL**: To exit the REPL, type `exit()` or press `Ctrl+D`.",
+      "studentConfig": "",
+      "teacherConfig": "",
+      "stationConfig": "## Instructions for Station-Sharing \n\nYou are currently responsible for sharing a station of this lab.\nYou have multiple options to share a or your terminal.\nTherefor we use the pyxtermjs - terminal server from:\n\nhttps://github.com/edrys-labs/module-pyxtermjs\n\n### Using Docker\n\nIf you haven't done it so far, install [docker](https://docs.docker.com/engine/install/).\nOr, follow one of the instruction-videos for your system:\n\n<details>\n<summary>Install Docker on Linux</summary>  \n<iframe\n  style=\"width: 100%; aspect-ratio: 16 / 9\"\n  src=\"https://www.youtube.com/embed/cqbh-RneBlk?si=juvUM5d2OSZ28WBv\"\n  title=\"YouTube video player\"\n  frameborder=\"0\"\n  allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"\n  referrerpolicy=\"strict-origin-when-cross-origin\"\n  allowfullscreen></iframe>\n</details>\n\n<details>\n<summary>Install Docker on Windows</summary>\n<iframe\n  style=\"width: 100%; aspect-ratio: 16 / 9\"\n  src=\"https://www.youtube.com/embed/WDEdRmTCSs8?si=X0agStn1akNcZLGu\"\n  title=\"YouTube video player\"\n  frameborder=\"0\"\n  allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"\n  referrerpolicy=\"strict-origin-when-cross-origin\"\n  allowfullscreen></iframe>\n</details>\n\n<details>\n<summary>Install Docker on MacOS</summary>\n<iframe\n  style=\"width: 100%; aspect-ratio: 16 / 9\"\n  src=\"https://www.youtube.com/embed/-EXlfSsP49A?si=OZ_l4_2hDKb6ULQ_\"\n  title=\"YouTube video player\"\n  frameborder=\"0\"\n  allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"\n  referrerpolicy=\"strict-origin-when-cross-origin\"\n  allowfullscreen></iframe>\n</details>\n\nThen the only thing that is required is to run the following command:\n\n```bash\ndocker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest\n```\n\nThis will download the pyxtermjs terminal-server from docker-hub and run it in a secure environment.\nIt contains support for:\n\n- `clojure`\n- `g++`\n- `gcc`\n- `golang`\n- `haskell`\n- `java`\n- `lua`\n- `mono`\n- `nodejs`\n- `python 3`\n- `r`\n- `rustc`\n\n### Using Python\n\nYou can also share your terminal directly via Python, visit the following project\n\nhttps://github.com/edrys-labs/module-pyxtermjs\n\n... the easiest way is to perform the following steps:\n\n``` bash\n# 1. clone the repository or download the folder manually\ngit clone https://github.com/edrys-labs/module-pyxtermjs\n\n# 2. install all required sources\npip3 install -r requirements.txt\n\n# 3. run the terminal-server\npython3 -m pyxtermjs --cors True --command bash --port 5000\n```",
+      "showInCustom": "station",
+      "width": "half",
+      "height": "huge"
+    },
+    {
+      "url": "https://edrys-labs.github.io/module-pyxtermjs/index.html",
+      "config": "",
+      "studentConfig": "",
+      "teacherConfig": "",
+      "stationConfig": {
+        "server": "http://localhost:5000/pty",
+        "execute": "execute",
+        "script": "echo $CODE | base64 --decode > main.py\npython3 main.py",
+        "enable": {
+          "teacher": true,
+          "student": true
+        }
+      },
+      "showInCustom": "station",
+      "width": "full",
+      "height": "medium"
+    }
+  ]
+}
