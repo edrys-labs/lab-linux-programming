@@ -23,42 +23,46 @@ Otherwise, you can install the server locally by following the instructions in t
 
 ### C Programming with `gcc`
 
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/c.yaml)
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/c.yaml`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/c.yaml)
+https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/c.yaml
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/c.json`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/c.json)
+https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/c.json
 
 ## C++ Programming with `g++`
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/cpp.yaml`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/cpp.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/cpp.yaml)
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/cpp.json`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/cpp.json)
+* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/cpp.yaml
+* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/cpp.json
 
 ## Haskell Programming with `ghc`
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/haskell.yaml`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/haskell.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/haskell.yaml)
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/haskell.json`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/haskell.json)
-
+* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/haskell.yaml
+* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/haskell.json
 
 ### Java Programming with `javac`
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/java.yaml`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/java.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/java.yaml)
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/java.json`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/java.json)
-
+* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/java.yaml
+* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/java.json
 
 ### Lua Programming with `lua`
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/lua.yaml`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/lua.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/lua.yaml)
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/lua.json`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/lua.json)
+* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/lua.yaml
+* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/lua.json
 
 ### Python Programming with `python`
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/python.yaml`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/python.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/python.yaml)
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/python.json`](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/python.json)
+* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/python.yaml
+* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/python.json
 
 
 ## Additional Programming Languages
