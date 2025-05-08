@@ -15,8 +15,7 @@ members:
   teacher: []
   student: []
 modules:
-  - url: >-
-      https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
+  - url: https://edrys-labs.github.io/module-markdown-it/index.html
     config:
       content: >-
         # Welcome to Lab-Linux: C++ -Programming
@@ -84,8 +83,7 @@ modules:
     showInCustom: station
     width: full
     height: medium
-  - url: >-
-      https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
+  - url: https://edrys-labs.github.io/module-markdown-it/index.html
     config:
       content: >-
         # Welcome to the Station
