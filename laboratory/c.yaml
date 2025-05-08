@@ -22,47 +22,51 @@ members:
 modules:
   - url: >-
       https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
-    config: |-
-      # Welcome to Lab-Linux: C-Programming
+    config: 
+      content: |-
+        # Welcome to Lab-Linux: C-Programming
 
-      C is a powerful computer programming language that lets you tell a computer what to do.
-      It's a bit like writing a recipe that the computer follows to complete tasks.
-      People use C to create software applications, help gadgets like your microwave work, or even make video games!
+        C is a powerful computer programming language that lets you tell a computer what to do.
+        It's a bit like writing a recipe that the computer follows to complete tasks.
+        People use C to create software applications, help gadgets like your microwave work, or even make video games!
 
-      Here’s why C is cool for learning:
+        Here’s why C is cool for learning:
 
-      1. **Simple to start**:
-         Even though it's powerful, C isn't very complicated to learn.
-         It has a small number of commands to remember, which are like the basic building blocks for more complex programs.
+        1. **Simple to start**:
+          Even though it's powerful, C isn't very complicated to learn.
+          It has a small number of commands to remember, which are like the basic building blocks for more complex programs.
 
-      2. **Everywhere in technology**:
-         Many of the electronics around us, like robots and smartphones, use C to function.
-         Learning C can help you understand more about how these things work.
+        2. **Everywhere in technology**:
+          Many of the electronics around us, like robots and smartphones, use C to function.
+          Learning C can help you understand more about how these things work.
 
-      3. **A great foundation**:
-         Once you understand C, learning other languages like Python, Java, or C++ becomes easier because many programming languages are based on C.
+        3. **A great foundation**:
+          Once you understand C, learning other languages like Python, Java, or C++ becomes easier because many programming languages are based on C.
 
-      Imagine C as the language that bridges your instructions with the computer’s actions.
-      By learning C, you're learning how to speak directly to computers, and that’s a super useful skill to have!
+        Imagine C as the language that bridges your instructions with the computer’s actions.
+        By learning C, you're learning how to speak directly to computers, and that’s a super useful skill to have!
 
-      __Visit a station by clicking onto it and then explore the terminal ;-)__
-    studentConfig: ''
-    teacherConfig: >-
-      ## Welcome for Teachers
+        __Visit a station by clicking onto it and then explore the terminal ;-)__
+    studentConfig:
+      content: ''
+    teacherConfig: 
+      content: >-
+        ## Welcome for Teachers
 
 
-      > This can be used as a base laboratory to create further and more
-      elaborate labs with [edrys-Lite](https://edrys-labs.github.io).
+        > This can be used as a base laboratory to create further and more
+        elaborate labs with [edrys-Lite](https://edrys-labs.github.io).
 
-      > You are currently in the Lobby. If there is a station available you can
-      switch to it and try out the terminal.
+        > You are currently in the Lobby. If there is a station available you can
+        switch to it and try out the terminal.
 
-      > Otherwise, if you are in teacher-mode you can share a lab by clicking
-      onto `setting` >> `station` and then by clicking the presented link,
+        > Otherwise, if you are in teacher-mode you can share a lab by clicking
+        onto `setting` >> `station` and then by clicking the presented link,
 
-      > which is the same as the current link, but only with the word `station`
-      instead of `classroom`.
-    stationConfig: ''
+        > which is the same as the current link, but only with the word `station`
+        instead of `classroom`.
+    stationConfig: 
+      content: ''
     showInCustom: lobby
     width: full
     height: huge
@@ -80,279 +84,283 @@ modules:
     height: medium
   - url: >-
       https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
-    config: >-
-      # Welcome to the Station
+    config: 
+      content: >-
+        # Welcome to the Station
 
 
-      ## C-Programming Tutorial
+        ## C-Programming Tutorial
 
 
-      Copy the following program into the editor
+        Copy the following program into the editor
 
 
-      ```cpp
+        ```cpp
 
-      #include <stdio.h>
-
-
-      int main() {
-        printf("Hello, world!");
-        return 0;
-      }
-
-      ```
+        #include <stdio.h>
 
 
-      ... and execute it ...
+        int main() {
+          printf("Hello, world!");
+          return 0;
+        }
+
+        ```
 
 
-      ### Handling inputs
+        ... and execute it ...
 
 
-      Modify the program to look like this:
+        ### Handling inputs
 
 
-      ``` c
-
-      #include <stdio.h>
+        Modify the program to look like this:
 
 
-      int main() {
-        // This array stores the name
-        char name[50];
+        ``` c
+
+        #include <stdio.h>
+
+
+        int main() {
+          // This array stores the name
+          char name[50];
+          
+          printf("Enter your name: ");
+          // Read user input into the 'name' variable
+          scanf("%s", name); 
+          printf("Hello, %s!\n", name);
+
+          return 0;
+        }
+
+        ```
+
+
+        Compile and Run Your Modified Program...
+
+
+        Follow the prompt to enter your name, and you should see a personalized
+        greeting.
+
+
+        ### Introduce an Error
+
+
+        Now, let's introduce a common error. Suppose we accidentally misspell the
+        `printf` function.
+
+
+        1. **Modify your program** again:
+
+          ```c
+          #include <stdio.h>
+
+          int main() {
+              char name[50];
+
+              printf("Enter your name: ");
+              scanf("%s", name)
+              // Error: 'print' is used instead of 'printf'
+              print("Hello, %s!\n", name);
+
+              return 0;
+          }
+          ```
+
+        2. Try to compile it again with.
+
+
+        ### Identifying and Fixing the Error
+
+
+        When you try to compile this incorrect program, GCC will generate an error
+        message. Here's what you might see in your terminal:
+
+
+        ``` bash
+
+        main.c:7:21: error: expected ‘;’ before ‘print’
+          7 |    scanf("%s", name)
+            |                     ^
+            |                     ;
+          8 |    // Error: 'print' is used instead of 'printf'
+          9 |    print("Hello, %s!\n", name);
+            |    ~~~~~ 
+        ```
+
+
+        **What went wrong?**
+
+
+        - **Implicit declaration of function ‘print’**: This means GCC doesn't
+        recognize `print` as a valid function. This is because there is no
+        standard function called `print` in C; it should be `printf`.
+
+        - **Expected ‘;’ before ‘(’ token**: This error appears because GCC is
+        confused by the unexpected function name and mishandles the syntax of C.
+
+
+        **How to fix it:**
+
+
+        - Replace `print` with `printf`.
+
+        - Make sure every function call ends with a semicolon (`;`).
+
+
+        After correcting the error, save your file and compile it again. When you
+        run it, it should work as expected, asking for your name and greeting you
+        correctly.
+
+
+        This process of identifying errors from compiler messages and resolving
+        them is crucial in learning to program in C or any programming language.
         
-        printf("Enter your name: ");
-        // Read user input into the 'name' variable
-        scanf("%s", name); 
-        printf("Hello, %s!\n", name);
+    studentConfig: 
+      content: ''
+    teacherConfig: 
+      content: ''
+    stationConfig: 
+      content: >-
+        ## Instructions for Station-Sharing 
 
-        return 0;
-      }
 
-      ```
+        You are currently responsible for sharing a station of this lab.
 
+        You have multiple options to share a or your terminal.
 
-      Compile and Run Your Modified Program...
+        Therefor we use the pyxtermjs - terminal server from:
 
 
-      Follow the prompt to enter your name, and you should see a personalized
-      greeting.
+        https://github.com/edrys-labs/module-pyxtermjs
 
 
-      ### Introduce an Error
+        ### Using Docker
 
 
-      Now, let's introduce a common error. Suppose we accidentally misspell the
-      `printf` function.
+        If you haven't done it so far, install
+        [docker](https://docs.docker.com/engine/install/).
 
+        Or, follow one of the instruction-videos for your system:
 
-      1. **Modify your program** again:
 
-         ```c
-         #include <stdio.h>
+        <details>
 
-         int main() {
-            char name[50];
+        <summary>Install Docker on Linux</summary>  
 
-            printf("Enter your name: ");
-            scanf("%s", name)
-            // Error: 'print' is used instead of 'printf'
-            print("Hello, %s!\n", name);
+        <iframe
+          style="width: 100%; aspect-ratio: 16 / 9"
+          src="https://www.youtube.com/embed/cqbh-RneBlk?si=juvUM5d2OSZ28WBv"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+        </details>
 
-            return 0;
-         }
-         ```
 
-      2. Try to compile it again with.
+        <details>
 
+        <summary>Install Docker on Windows</summary>
 
-      ### Identifying and Fixing the Error
+        <iframe
+          style="width: 100%; aspect-ratio: 16 / 9"
+          src="https://www.youtube.com/embed/WDEdRmTCSs8?si=X0agStn1akNcZLGu"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+        </details>
 
 
-      When you try to compile this incorrect program, GCC will generate an error
-      message. Here's what you might see in your terminal:
+        <details>
 
+        <summary>Install Docker on MacOS</summary>
 
-      ``` bash
+        <iframe
+          style="width: 100%; aspect-ratio: 16 / 9"
+          src="https://www.youtube.com/embed/-EXlfSsP49A?si=OZ_l4_2hDKb6ULQ_"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+        </details>
 
-      main.c:7:21: error: expected ‘;’ before ‘print’
-        7 |    scanf("%s", name)
-          |                     ^
-          |                     ;
-        8 |    // Error: 'print' is used instead of 'printf'
-        9 |    print("Hello, %s!\n", name);
-          |    ~~~~~ 
-      ```
 
+        Then the only thing that is required is to run the following command:
 
-      **What went wrong?**
 
+        ```bash
 
-      - **Implicit declaration of function ‘print’**: This means GCC doesn't
-      recognize `print` as a valid function. This is because there is no
-      standard function called `print` in C; it should be `printf`.
+        docker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest
 
-      - **Expected ‘;’ before ‘(’ token**: This error appears because GCC is
-      confused by the unexpected function name and mishandles the syntax of C.
+        ```
 
 
-      **How to fix it:**
+        This will download the pyxtermjs terminal-server from docker-hub and run
+        it in a secure environment.
 
+        It contains support for:
 
-      - Replace `print` with `printf`.
 
-      - Make sure every function call ends with a semicolon (`;`).
+        - `clojure`
 
+        - `g++`
 
-      After correcting the error, save your file and compile it again. When you
-      run it, it should work as expected, asking for your name and greeting you
-      correctly.
+        - `gcc`
 
+        - `golang`
 
-      This process of identifying errors from compiler messages and resolving
-      them is crucial in learning to program in C or any programming language.
-       
-    studentConfig: ''
-    teacherConfig: ''
-    stationConfig: >-
-      ## Instructions for Station-Sharing 
+        - `haskell`
 
+        - `java`
 
-      You are currently responsible for sharing a station of this lab.
+        - `lua`
 
-      You have multiple options to share a or your terminal.
+        - `mono`
 
-      Therefor we use the pyxtermjs - terminal server from:
+        - `nodejs`
 
+        - `python 3`
 
-      https://github.com/edrys-labs/module-pyxtermjs
+        - `r`
 
+        - `rustc`
 
-      ### Using Docker
 
+        ### Using Python
 
-      If you haven't done it so far, install
-      [docker](https://docs.docker.com/engine/install/).
 
-      Or, follow one of the instruction-videos for your system:
+        You can also share your terminal directly via Python, visit the follwing
+        project
 
 
-      <details>
+        https://github.com/edrys-labs/module-pyxtermjs
 
-      <summary>Install Docker on Linux</summary>  
 
-      <iframe
-        style="width: 100%; aspect-ratio: 16 / 9"
-        src="https://www.youtube.com/embed/cqbh-RneBlk?si=juvUM5d2OSZ28WBv"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-      </details>
+        ... the easiest way is to perform the following steps:
 
 
-      <details>
+        ``` bash
 
-      <summary>Install Docker on Windows</summary>
+        # 1. clone the repository or download the folder manually
 
-      <iframe
-        style="width: 100%; aspect-ratio: 16 / 9"
-        src="https://www.youtube.com/embed/WDEdRmTCSs8?si=X0agStn1akNcZLGu"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-      </details>
+        git clone https://github.com/edrys-labs/module-pyxtermjs
 
 
-      <details>
+        # 2. install all required sources
 
-      <summary>Install Docker on MacOS</summary>
+        pip3 install -r requirements.txt
 
-      <iframe
-        style="width: 100%; aspect-ratio: 16 / 9"
-        src="https://www.youtube.com/embed/-EXlfSsP49A?si=OZ_l4_2hDKb6ULQ_"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-      </details>
 
+        # 3. run the terminal-server
 
-      Then the only thing that is required is to run the following command:
+        python3 -m pyxtermjs --cors True --command bash --port 5000
 
-
-      ```bash
-
-      docker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest
-
-      ```
-
-
-      This will download the pyxtermjs terminal-server from docker-hub and run
-      it in a secure environment.
-
-      It contains support for:
-
-
-      - `clojure`
-
-      - `g++`
-
-      - `gcc`
-
-      - `golang`
-
-      - `haskell`
-
-      - `java`
-
-      - `lua`
-
-      - `mono`
-
-      - `nodejs`
-
-      - `python 3`
-
-      - `r`
-
-      - `rustc`
-
-
-      ### Using Python
-
-
-      You can also share your terminal directly via Python, visit the follwing
-      project
-
-
-      https://github.com/edrys-labs/module-pyxtermjs
-
-
-      ... the easiest way is to perform the following steps:
-
-
-      ``` bash
-
-      # 1. clone the repository or download the folder manually
-
-      git clone https://github.com/edrys-labs/module-pyxtermjs
-
-
-      # 2. install all required sources
-
-      pip3 install -r requirements.txt
-
-
-      # 3. run the terminal-server
-
-      python3 -m pyxtermjs --cors True --command bash --port 5000
-
-      ```
+        ```
     showInCustom: station
     width: half
     height: huge
