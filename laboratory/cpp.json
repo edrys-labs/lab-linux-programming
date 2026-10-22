@@ -33,12 +33,14 @@
       "height": "huge"
     },
     {
-      "url": "https://edrys-labs.github.io/module-editor/index.html",
+      "url": "https://edrys-labs.github.io/module-monaco-editor/",
       "config": {
-        "editorText": "Starting text in editor...",
         "runCommand": "execute",
         "language": "cpp",
-        "theme": "light"
+        "theme": "vs-light",
+        "value": "Starting text in editor...",
+        "synchronize": true,
+        "showLanguageSelector": true
       },
       "studentConfig": "",
       "teacherConfig": "",

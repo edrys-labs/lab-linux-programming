@@ -5,7 +5,7 @@ By combining the terminal with an editor, the user can write, compile, and run t
 
 __Used Modules:__
 
-- [module-editor](https://github.com/edrys-labs/module-editor): Simple minimal and configurable code editor.
+- [module-monaco-editor](https://github.com/edrys-labs/module-monaco-editor): Collaborative code editor with real-time sync.
 - [module-markdown-it](https://github.com/edrys-labs/module-markdown-it): Markdown viewer used for documentation. 
 - [module-pyxtermjs](https://github.com/edrys-labs/module-pyxtermjs): Terminal Server, this requires a running local server to be able to run the code.
 

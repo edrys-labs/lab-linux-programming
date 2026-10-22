@@ -74,12 +74,14 @@ modules:
     showInCustom: lobby
     width: full
     height: huge
-  - url: https://edrys-labs.github.io/module-editor/index.html
+  - url: https://edrys-labs.github.io/module-monaco-editor/
     config:
-      editorText: Starting text in editor...
+      synchronize: true
+      showLanguageSelector: true
+      value: Starting text in editor...
       runCommand: execute
-      language: cpp
-      theme: light
+      language: python
+      theme: vs-light
     studentConfig: ''
     teacherConfig: ''
     stationConfig: ''
