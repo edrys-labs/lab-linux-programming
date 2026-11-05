@@ -1,9 +1,7 @@
-id: loyA61WU1SQrcxuH
-createdBy: 15sg55Z9lOgM
 dateCreated: 1713192447956
 name: 'Lab-Linux: Haskell-Programming'
 meta:
-  logo: https://raw.githubusercontent.com/edrys-labs/lab-linux/main/media/haskell.jpg
+  logo: https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/media/haskell.jpg
   description: >-
     This course introduces young learners to Haskell, a functional programming language known for its elegance and safety.
     Students will start by writing a simple "Hello, World!" program to understand the basics of Haskell syntax.
@@ -247,7 +245,7 @@ modules:
 
         ```bash
 
-        docker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest
+        docker run -it -p 127.0.0.1:5000:5000 edryslabs/module-pyxtermjs:development
 
         ```
 
@@ -324,7 +322,7 @@ modules:
       server: http://localhost:5000/pty
       execute: execute
       script: |-
-        echo $CODE | base64 --decode > main.hs
+        echo $CODE | base64 --decode > hello.hs
         ghc hello.hs && ./hello
       enable:
         teacher: true

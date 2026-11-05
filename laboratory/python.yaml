@@ -1,9 +1,7 @@
-id: loyA61WU1WQrcxuH
-createdBy: 15sg55Z9lOgM
 dateCreated: 1713192447956
 name: 'Lab-Linux: Python-Programming'
 meta:
-  logo: https://raw.githubusercontent.com/edrys-labs/lab-linux/main/media/python.jpg
+  logo: https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/media/python.jpg
   description: >-
     This Python programming course is designed to introduce young learners to the exciting world of coding.
     Students will start by writing a simple program that prints a message to the screen.
@@ -238,7 +236,7 @@ modules:
 
         ```bash
 
-        docker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest
+        docker run -it -p 127.0.0.1:5000:5000 edryslabs/module-pyxtermjs:development
 
         ```
 

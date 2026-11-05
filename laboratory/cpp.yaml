@@ -1,9 +1,7 @@
-id: loyA61WU1LQrcxuH
-createdBy: 15sg55Z9lOgM
 dateCreated: 1713192447956
 name: 'Lab-Linux: C++ Programming'
 meta:
-  logo: https://raw.githubusercontent.com/edrys-labs/lab-linux/main/media/cpp.jpg
+  logo: https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/media/cpp.jpg
   description: >-
     This C++ programming course introduces young students to the basics of one of the most widely used programming languages in the world.
     Starting with a simple "Hello, World!" program, students will learn the foundational concepts of C++ and how to interact with the computer through code.
@@ -229,7 +227,7 @@ modules:
 
         ```bash
 
-        docker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest
+        docker run -it -p 127.0.0.1:5000:5000 edryslabs/module-pyxtermjs:development
 
         ```
 

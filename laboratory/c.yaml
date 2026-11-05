@@ -1,10 +1,8 @@
-id: z5NH94vk86m35HxJ
-createdBy: 6cb8dad0xmtGH1
 dateCreated: 1713192447954
 name: 'Lab-Linux: C-Programming'
 meta:
   logo: >-
-    https://raw.githubusercontent.com/edrys-labs/lab-linux/main/media/c.jpg
+    https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/media/c.jpg
   description: >-
     Explore the basics of C programming and GCC compiler usage with our
     step-by-step tutorial designed for beginners. Start by creating a simple
@@ -295,7 +293,7 @@ modules:
 
         ```bash
 
-        docker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest
+        docker run -it -p 127.0.0.1:5000:5000 edryslabs/module-pyxtermjs:development
 
         ```
 

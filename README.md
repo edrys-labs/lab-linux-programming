@@ -14,7 +14,7 @@ After importing one of the predefined configuration listed below, you have to op
 The easiest way to do this, is by installing docker and running the following command:
 
 ```bash
-docker run -it -p 5000:5000 crosslab/edrys_pyxtermjs_development:latest
+docker run -it -p 127.0.0.1:5000:5000 edryslabs/module-pyxtermjs:development
 ```
 
 This will download the pyxtermjs terminal-server from docker-hub and run it in a secure environment.
@@ -23,46 +23,46 @@ Otherwise, you can install the server locally by following the instructions in t
 
 ### C Programming with `gcc`
 
-[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/c.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/c.yaml)
 
-https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/c.yaml
+https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/c.yaml
 
-https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/c.json
+https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/c.json
 
 ## C++ Programming with `g++`
 
-[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/cpp.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/cpp.yaml)
 
-* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/cpp.yaml
-* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/cpp.json
+* https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/cpp.yaml
+* https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/cpp.json
 
 ## Haskell Programming with `ghc`
 
-[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/haskell.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/haskell.yaml)
 
-* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/haskell.yaml
-* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/haskell.json
+* https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/haskell.yaml
+* https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/haskell.json
 
 ### Java Programming with `javac`
 
-[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/java.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/java.yaml)
 
-* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/java.yaml
-* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/java.json
+* https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/java.yaml
+* https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/java.json
 
 ### Lua Programming with `lua`
 
-[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/lua.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/lua.yaml)
 
-* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/lua.yaml
-* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/lua.json
+* https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/lua.yaml
+* https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/lua.json
 
 ### Python Programming with `python`
 
-[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/python.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/python.yaml)
 
-* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/python.yaml
-* https://raw.githubusercontent.com/edrys-labs/lab-linux/main/laboratory/python.json
+* https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/python.yaml
+* https://raw.githubusercontent.com/edrys-labs/lab-linux-programming/main/laboratory/python.json
 
 
 ## Additional Programming Languages
